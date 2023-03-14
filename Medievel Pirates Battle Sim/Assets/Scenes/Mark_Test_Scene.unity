@@ -477,6 +477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light Unit - Pirate
       objectReference: {fileID: 0}
+    - target: {fileID: 856796901208856390, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 856796901208856391, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: goal
       value: 
@@ -538,6 +542,10 @@ PrefabInstance:
       propertyPath: goal
       value: 
       objectReference: {fileID: 1523186033}
+    - target: {fileID: 856686662, guid: 068f52bcd3ba833479a4507ef1485225, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6060538430723321856, guid: 068f52bcd3ba833479a4507ef1485225, type: 3}
       propertyPath: m_Name
       value: Light Unit - Knight

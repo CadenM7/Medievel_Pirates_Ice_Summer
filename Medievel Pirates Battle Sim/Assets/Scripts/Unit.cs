@@ -22,11 +22,10 @@ public class Unit : MonoBehaviour, IDamageable
     void OnCollisionEnter(Collision collision)
     {
         print("We collided");
-        print(collision.gameObject.tag);
         if (collision.gameObject.tag == "Pirate")
         {
             print("That filthy Pirate");
-            print("Darn");
+            OnTakeDamage(40);
         }
     }
 
