@@ -27,7 +27,7 @@ public class Finder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("speed", agent.velocity.sqrMagnitude);
+        // animator.SetFloat("speed", agent.velocity.sqrMagnitude);
 
         // https://stackoverflow.com/questions/66007738/unity-how-to-jump-using-a-navmeshagent-and-click-to-move-logic
         // clicking on the nav mesh, sets the destination of the agent and off he goes
