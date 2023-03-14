@@ -41,55 +41,55 @@ public class Finder : MonoBehaviour
         }
 
         // when you want to jump
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
-        {
-            grounded = false;
-            Vector3 currentVelocity = new Vector3(0, 0 , 0);
-            if (agent.enabled)
-            {
-                // set the agents target to where you are before the jump
-                // this stops her before she jumps. Alternatively, you could
-                // cache this value, and set it again once the jump is complete
-                // to continue the original move
-                currentVelocity = agent.desiredVelocity;
-                agent.SetDestination(transform.position);
-                // disable the agent
-                agent.updatePosition = false;
-                agent.updateRotation = false;
-                agent.isStopped = true;
-            }
-            // make the jump
-            rigidbody.isKinematic = false;
-            rigidbody.useGravity = true;
-            rigidbody.AddRelativeForce(currentVelocity, ForceMode.Impulse);
-            rigidbody.AddRelativeForce(new Vector3(0, 5f, 0), ForceMode.Impulse);
-            animator.SetTrigger("jump");
-        }
+        // if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        // {
+        //     grounded = false;
+        //     Vector3 currentVelocity = new Vector3(0, 0 , 0);
+        //     if (agent.enabled)
+        //     {
+        //         // set the agents target to where you are before the jump
+        //         // this stops her before she jumps. Alternatively, you could
+        //         // cache this value, and set it again once the jump is complete
+        //         // to continue the original move
+        //         currentVelocity = agent.desiredVelocity;
+        //         agent.SetDestination(transform.position);
+        //         // disable the agent
+        //         agent.updatePosition = false;
+        //         agent.updateRotation = false;
+        //         agent.isStopped = true;
+        //     }
+        //     // make the jump
+        //     rigidbody.isKinematic = false;
+        //     rigidbody.useGravity = true;
+        //     rigidbody.AddRelativeForce(currentVelocity, ForceMode.Impulse);
+        //     rigidbody.AddRelativeForce(new Vector3(0, 5f, 0), ForceMode.Impulse);
+        //     animator.SetTrigger("jump");
+        // }
     }
 
     /// <summary>
     /// Check for collision back to the ground, and re-enable the NavMeshAgent
     /// </summary>
-    private void OnCollisionEnter(Collision collision)
-    {
-        print("Hit Something!");
-        if (collision.collider != null && collision.collider.tag == "Ground")
-        {
-            print("It is the ground!");
-            if (!grounded)
-            {
-                if (agent.enabled)
-                {
-                    agent.nextPosition = transform.position;
-                    agent.SetDestination(transform.position);
-                    agent.updatePosition = true;
-                    agent.updateRotation = true;
-                    agent.isStopped = false;
-                }
-                rigidbody.isKinematic = true;
-                rigidbody.useGravity = false;
-                grounded = true;
-            }
-        }
-    }
+    // private void OnCollisionEnter(Collision collision)
+    // {
+    //     print("Hit Something!");
+    //     if (collision.collider != null && collision.collider.tag == "Ground")
+    //     {
+    //         print("It is the ground!");
+    //         if (!grounded)
+    //         {
+    //             if (agent.enabled)
+    //             {
+    //                 agent.nextPosition = transform.position;
+    //                 agent.SetDestination(transform.position);
+    //                 agent.updatePosition = true;
+    //                 agent.updateRotation = true;
+    //                 agent.isStopped = false;
+    //             }
+    //             rigidbody.isKinematic = true;
+    //             rigidbody.useGravity = false;
+    //             grounded = true;
+    //         }
+    //     }
+    // }
 }
