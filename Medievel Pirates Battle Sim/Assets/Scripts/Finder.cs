@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+// From Goadrich and Unity Manual
 public class Finder : MonoBehaviour
 {
     public Transform goal;
