@@ -22,6 +22,7 @@ public class Unit : MonoBehaviour, IDamageable
     void OnCollisionEnter(Collision collision)
     {
         print("We collided");
+        print(collision.gameObject.tag);
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "Pirate")
         {
@@ -50,6 +51,6 @@ public class Unit : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
