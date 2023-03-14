@@ -23,10 +23,8 @@ public class Unit : MonoBehaviour, IDamageable
     {
         print("We collided");
         print(collision.gameObject.tag);
-        //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "Pirate")
         {
-            //If the GameObject's name matches the one you suggest, output this message in the console
             print("That filthy Pirate");
             print("Darn");
         }

@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 856796901208856379}
   - component: {fileID: 856796901208856391}
   m_Layer: 0
-  m_Name: Light Unit - Pirate
+  m_Name: LightPirate
   m_TagString: Pirate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
