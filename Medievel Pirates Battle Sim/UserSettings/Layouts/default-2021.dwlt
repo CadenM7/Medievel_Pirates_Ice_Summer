@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 20
+  controlID: 17
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 101
+  controlID: 18
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 27
+  controlID: 100
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -326,14 +326,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.6263158
+    - e00: 0.8896867
       e01: 0
       e02: 0
-      e03: -16.315765
+      e03: -89.54556
       e10: 0
-      e11: 0.6263158
+      e11: 0.8896867
       e12: 0
-      e13: 188.5
+      e13: 162.78955
       e20: 0
       e21: 0
       e22: 1
@@ -399,13 +399,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Game Development\Project 5\Medievel_Pirates_Ice_Summer\Medievel
     Pirates Battle Sim
@@ -413,9 +413,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 46bb0000
-    m_LastClickedID: 47942
-    m_ExpandedIDs: 000000003cbb000000ca9a3bffffff7f
+    m_SelectedIDs: fc6c0000
+    m_LastClickedID: 27900
+    m_ExpandedIDs: 00000000e86c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -443,7 +443,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000e86c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -471,7 +471,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000000000000da810000505a00008ab80000e0bc0000
+    m_ExpandedInstanceIDs: c623000000000000da810000505a00008ab80000e0bc00003c6d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,9 +571,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: ca790000
       m_LastClickedID: 0
-      m_ExpandedIDs: 86b8ffffb2b9ffff
+      m_ExpandedIDs: 2c99ffff7c99ffff0a9cffff4e9cffff929cffffd69cffff649fffffc89fffffbcaaffff94f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -855,9 +855,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.2954121, y: -2.1605382, z: 0.95248294}
+    m_Target: {x: 492.32028, y: 24.084593, z: -252.20166}
     speed: 2
-    m_Value: {x: 1.2954121, y: -2.1605382, z: 0.95248294}
+    m_Value: {x: 492.32028, y: 24.084593, z: -252.20166}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -904,13 +904,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.15128633, y: 0.83423537, z: -0.28045356, w: -0.45001996}
+    m_Target: {x: 0.30943832, y: 0.021960383, z: 0.00714755, w: -0.950633}
     speed: 2
-    m_Value: {x: -0.15128571, y: 0.8342319, z: -0.2804524, w: -0.45001808}
+    m_Value: {x: 0.3094401, y: 0.02196051, z: 0.0071475916, w: -0.9506385}
   m_Size:
-    m_Target: 3.9176412
+    m_Target: 1.0618821
     speed: 2
-    m_Value: 3.9176412
+    m_Value: 1.0618821
   m_Ortho:
     m_Target: 0
     speed: 2
