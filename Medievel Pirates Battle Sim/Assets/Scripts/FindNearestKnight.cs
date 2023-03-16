@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 // Adapted From https://www.youtube.com/watch?v=BjpZdOwZIT4
-public class SampleNearestObject : MonoBehaviour
+public class FindNearestKnight : MonoBehaviour
 {
 
     public GameObject[] AllEnemies;

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnUnit : MonoBehaviour
+public class SpawnPirate : MonoBehaviour
 {
 
-    public GameObject knight;
+    public GameObject pirate;
 
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class SpawnUnit : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 // Check if it is within the transform area to add unit
-                Instantiate(knight, hit.point, Quaternion.identity);
+                Instantiate(pirate, hit.point, Quaternion.identity);
                 print("Object Should be clicked by mouse");
             }
         }

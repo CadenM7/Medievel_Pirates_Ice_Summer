@@ -79,8 +79,8 @@ GameObject:
   - component: {fileID: 856796901208856377}
   - component: {fileID: 856796901208856376}
   - component: {fileID: 856796901208856379}
-  - component: {fileID: 3999412220951912860}
   - component: {fileID: -1023516450984382175}
+  - component: {fileID: -6789647680896963240}
   m_Layer: 0
   m_Name: LightPirate
   m_TagString: Pirate
@@ -219,21 +219,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3999412220951912860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514146944834644576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aec19de9950c404e86a20e4cb5db509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AllEnemies: []
-  NearestEnemy: {fileID: 0}
-  navigation: {fileID: 856796901208856379}
 --- !u!114 &-1023516450984382175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +232,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
+--- !u!114 &-6789647680896963240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514146944834644576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aec19de9950c404e86a20e4cb5db509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllEnemies: []
+  NearestEnemy: {fileID: 0}
+  test: 0
+  navigation: {fileID: 856796901208856379}
 --- !u!1 &719685638180099447
 GameObject:
   m_ObjectHideFlags: 0
