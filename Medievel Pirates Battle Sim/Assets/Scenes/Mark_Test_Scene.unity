@@ -328,6 +328,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 514146944834644576, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
   m_PrefabInstance: {fileID: 856796899906270726}
   m_PrefabAsset: {fileID: 0}
+--- !u!195 &892896422 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 856796901208856379, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+  m_PrefabInstance: {fileID: 856796899906270726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &892896428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +346,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
+--- !u!114 &892896429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892896420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aec19de9950c404e86a20e4cb5db509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllEnemies: []
+  NearestEnemy: {fileID: 0}
+  navigation: {fileID: 892896422}
 --- !u!1 &1397692065
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +523,10 @@ PrefabInstance:
       propertyPath: goal
       value: 
       objectReference: {fileID: 856686659}
+    - target: {fileID: 856796901208856391, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_RootOrder
       value: 2

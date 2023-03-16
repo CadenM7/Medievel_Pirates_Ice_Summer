@@ -19,7 +19,7 @@ public class Finder : MonoBehaviour
     
     void Start () {
         agent = GetComponent<NavMeshAgent>();
-        agent.destination = goal.position; 
+        agent.destination = goal.position;
         animator = body.GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody>();
     }
