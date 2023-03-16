@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Adapted from https://github.com/llamacademy/worldspace-health-bars/blob/main/Assets/Scripts/Enemy.cs
-public class Unit : MonoBehaviour, IDamageable
+public class Pirate : MonoBehaviour, IDamageable
 {
     [SerializeField]
     private int Health = 100;
@@ -22,10 +22,11 @@ public class Unit : MonoBehaviour, IDamageable
     void OnCollisionEnter(Collision collision)
     {
         print("We collided");
-        if (collision.gameObject.tag == "Pirate")
+        if (collision.gameObject.tag == "Knight")
         {
-            print("That filthy Pirate");
-            OnTakeDamage(40);
+            print("Arg.. That knight!");
+            OnTakeDamage(45);
+            
         }
     }
 
