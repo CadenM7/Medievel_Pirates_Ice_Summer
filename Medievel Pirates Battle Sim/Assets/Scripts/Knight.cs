@@ -8,6 +8,8 @@ public class Knight : MonoBehaviour, IDamageable
     [SerializeField]
     private int Health = 100;
 
+    private Animator animator;
+
     private UnityEngine.AI.NavMeshAgent Agent;
     private float MaxHealth;
 
@@ -16,6 +18,7 @@ public class Knight : MonoBehaviour, IDamageable
     {
         MaxHealth = Health;
         Agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     // From Unity Documentation
@@ -25,6 +28,7 @@ public class Knight : MonoBehaviour, IDamageable
         if (collision.gameObject.tag == "Pirate")
         {
             print("That filthy Pirate");
+            animator.SetTrigger("Collision");
             OnTakeDamage(40);
             
         }

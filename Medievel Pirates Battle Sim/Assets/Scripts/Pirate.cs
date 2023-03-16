@@ -11,11 +11,14 @@ public class Pirate : MonoBehaviour, IDamageable
     private UnityEngine.AI.NavMeshAgent Agent;
     private float MaxHealth;
 
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         MaxHealth = Health;
         Agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     // From Unity Documentation
@@ -25,6 +28,7 @@ public class Pirate : MonoBehaviour, IDamageable
         if (collision.gameObject.tag == "Knight")
         {
             print("Arg.. That knight!");
+            animator.SetTrigger("Collision");
             OnTakeDamage(45);
             
         }
