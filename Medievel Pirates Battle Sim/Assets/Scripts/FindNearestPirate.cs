@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 // Adapted From https://www.youtube.com/watch?v=BjpZdOwZIT4
-public class FindNearestKnight : MonoBehaviour
+public class FindNearestPirate : MonoBehaviour
 {
 
     public GameObject[] AllEnemies;
@@ -23,7 +23,8 @@ public class FindNearestKnight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AllEnemies = GameObject.FindGameObjectsWithTag("Knight");
+        nearestDistance = 1000000;
+        AllEnemies = GameObject.FindGameObjectsWithTag("Pirate");
         for (int i = 0; i < AllEnemies.Length; i++) {
             distance = Vector3.Distance(this.transform.position, AllEnemies[i].transform.position);
             if (distance < nearestDistance) {

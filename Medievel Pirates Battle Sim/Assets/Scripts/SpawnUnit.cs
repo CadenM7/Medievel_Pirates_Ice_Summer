@@ -7,6 +7,7 @@ public class SpawnUnit : MonoBehaviour
 
     public GameObject knight;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class SpawnUnit : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
+                // Check if it is within the transform area to add unit
                 Instantiate(knight, hit.point, Quaternion.identity);
                 print("Object Should be clicked by mouse");
             }
