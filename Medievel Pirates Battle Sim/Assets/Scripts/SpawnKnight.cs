@@ -22,9 +22,11 @@ public class SpawnKnight : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                // Check if it is within the transform area to add unit
-                Instantiate(knight, hit.point, Quaternion.identity);
-                print("Object Should be clicked by mouse");
+                if (hit.collider.tag == "Spawner") {
+                    Instantiate(knight, hit.point, Quaternion.identity);
+                    print("Object Should be clicked by mouse");
+                }
+                
             }
         }
     }
