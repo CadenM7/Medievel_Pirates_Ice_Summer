@@ -22,9 +22,10 @@ public class SpawnPirate : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                // Check if it is within the transform area to add unit
-                Instantiate(pirate, hit.point, Quaternion.identity);
-                print("Object Should be clicked by mouse");
+                if (hit.collider.tag == "Spawner") {
+                    Instantiate(pirate, hit.point, Quaternion.identity);
+                    print("Object Should be clicked by mouse");
+                }
             }
         }
     }

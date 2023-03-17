@@ -135,9 +135,10 @@ GameObject:
   - component: {fileID: 268877108}
   - component: {fileID: 268877107}
   - component: {fileID: 268877106}
+  - component: {fileID: 268877110}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: SpawnArea
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -213,13 +214,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268877105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.457886, y: 4.8578386, z: 148.04276}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 104.6, y: 10.5, z: 163.4}
+  m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268877110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268877105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f125f5a21cb929243b1405c91840601a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pirate: {fileID: 514146944834644576, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
 --- !u!1 &398638155
 GameObject:
   m_ObjectHideFlags: 0
