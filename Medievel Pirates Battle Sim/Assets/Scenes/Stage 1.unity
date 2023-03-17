@@ -231,13 +231,61 @@ RectTransform:
   m_Children:
   - {fileID: 1845625047}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &142612183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142612184}
+  - component: {fileID: 142612185}
+  m_Layer: 0
+  m_Name: PirateSpace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142612184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142612183}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 146.5, y: 17.32, z: 135.26276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1515383300}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &142612185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142612183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aec19de9950c404e86a20e4cb5db509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllEnemies: []
+  NearestEnemy: {fileID: 0}
+  navigation: {fileID: 1872937514}
 --- !u!1 &268877105
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,46 +956,14 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1171781656
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1171781657}
-  m_Layer: 0
-  m_Name: PirateSpace
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1171781657
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171781656}
-  m_LocalRotation: {x: -0, y: -0.7060346, z: -0, w: -0.70817745}
-  m_LocalPosition: {x: 170.11566, y: -42, z: 197.45866}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1515383300}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: -270.174, z: 0}
 --- !u!1001 &1314635939
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1171781657}
+    m_TransformParent: {fileID: 142612184}
     m_Modifications:
     - target: {fileID: 353238594285553979, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -973,33 +989,49 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 856796901208856377, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 856796901208856390, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.1235
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52
+      value: -7.3199997
       objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.982508
+      value: 0.17849733
       objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9999968
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.002557885
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894330940489789658, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1185,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6523852823622658720, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6735271644124935520, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -1265,7 +1301,8 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6789647680896963240, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
 --- !u!1 &1364904408
 GameObject:
@@ -1651,6 +1688,11 @@ RectTransform:
   m_AnchoredPosition: {x: -119, y: -53}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!195 &1872937514 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 856796901208856379, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+  m_PrefabInstance: {fileID: 1314635939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1989780118
 PrefabInstance:
   m_ObjectHideFlags: 0

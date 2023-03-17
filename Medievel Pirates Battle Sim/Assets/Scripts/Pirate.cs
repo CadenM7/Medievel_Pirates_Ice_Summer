@@ -57,5 +57,9 @@ public class Pirate : MonoBehaviour, IDamageable
     void Update()
     {
 
+
+        Vector3 Adirection = (transform.position);
+
+        transform.rotation = Quaternion.LookRotation(Adirection);
     }
 }
