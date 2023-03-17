@@ -30,7 +30,10 @@ public class Pirate : MonoBehaviour, IDamageable
             print("Arg.. That knight!");
             animator.SetTrigger("Collision");
             OnTakeDamage(45);
-            
+            Vector3 direction = (collision.transform.position - transform.position).normalized;
+            Vector3 knockback = direction * 300f;
+            GetComponent<Collider>().attachedRigidbody.AddForce(-knockback);
+
         }
     }
 

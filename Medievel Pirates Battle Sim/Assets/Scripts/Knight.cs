@@ -29,8 +29,7 @@ public class Knight : MonoBehaviour, IDamageable
         {
             print("That filthy Pirate");
             animator.SetTrigger("Collision");
-            OnTakeDamage(40);
-            
+            OnTakeDamage(30);
         }
     }
 
