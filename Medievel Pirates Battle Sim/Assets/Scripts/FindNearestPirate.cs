@@ -11,6 +11,7 @@ public class FindNearestPirate : MonoBehaviour
     public GameObject NearestEnemy;
     float distance;
     float nearestDistance = 1000000;
+    public bool on = false;
 
     public NavMeshAgent navigation;
 
@@ -20,18 +21,28 @@ public class FindNearestPirate : MonoBehaviour
         
     }
 
+    public void turnOn(){
+        on = true;
+    }
+
+    public void turnOff(){
+        on = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        nearestDistance = 1000000;
-        AllEnemies = GameObject.FindGameObjectsWithTag("Pirate");
-        for (int i = 0; i < AllEnemies.Length; i++) {
-            distance = Vector3.Distance(this.transform.position, AllEnemies[i].transform.position);
-            if (distance < nearestDistance) {
-                NearestEnemy = AllEnemies[i];
-                nearestDistance = distance;
+        if (on){
+            nearestDistance = 1000000;
+            AllEnemies = GameObject.FindGameObjectsWithTag("Pirate");
+            for (int i = 0; i < AllEnemies.Length; i++) {
+                distance = Vector3.Distance(this.transform.position, AllEnemies[i].transform.position);
+                if (distance < nearestDistance) {
+                    NearestEnemy = AllEnemies[i];
+                    nearestDistance = distance;
+                }
             }
+            navigation.destination = NearestEnemy.transform.position;
         }
-        navigation.destination = NearestEnemy.transform.position;
     }
 }

@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
     public GameObject[] AllEnemies;
     public GameObject NearestEnemy;
     float distance;
-    float nearestDistance = 1000000;
+    //float nearestDistance = 1000000;
 
     public bool gameOver = false;
 

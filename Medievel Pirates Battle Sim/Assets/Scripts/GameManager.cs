@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // Transitions
     public GameObject curtain;
     public GameObject canvas;
-    private bool raiseLower = false;
+    //private bool raiseLower = false;
 
     // Buttons
     public GameObject mainScreen;
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     IEnumerator ColorLerpFunction(bool fadeout, float duration)
     {
         float time = 0;
-        raiseLower = true;
+        //raiseLower = true;
         Image curtainImg = curtain.GetComponent<Image>();
         Color startValue;
         Color endValue;
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
         curtainImg.color = endValue;
-        raiseLower = false;
+        //raiseLower = false;
     }
 
     IEnumerator LoadYourAsyncScene(string scene)

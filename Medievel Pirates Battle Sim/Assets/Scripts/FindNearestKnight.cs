@@ -11,6 +11,7 @@ public class FindNearestKnight : MonoBehaviour
     public GameObject NearestEnemy;
     float distance;
     float nearestDistance = 1000000;
+    public bool on = false;
 
     public NavMeshAgent navigation;
 
@@ -20,21 +21,32 @@ public class FindNearestKnight : MonoBehaviour
         
     }
 
+    public void turnOn(){
+        on = true;
+    }
+
+    public void turnOff(){
+        on = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        print("We are updating");
-        nearestDistance = 1000000;
-        AllEnemies = GameObject.FindGameObjectsWithTag("Knight");
-        for (int i = 0; i < AllEnemies.Length; i++) {
-            distance = Vector3.Distance(this.transform.position, AllEnemies[i].transform.position);
-            if (distance < nearestDistance) {
-                print("We got a new target!");
-                NearestEnemy = AllEnemies[i];
-                nearestDistance = distance;
+        
+        if (on){
+            print("We are updating");
+            nearestDistance = 1000000;
+            AllEnemies = GameObject.FindGameObjectsWithTag("Knight");
+            for (int i = 0; i < AllEnemies.Length; i++) {
+                distance = Vector3.Distance(this.transform.position, AllEnemies[i].transform.position);
+                if (distance < nearestDistance) {
+                    print("We got a new target!");
+                    NearestEnemy = AllEnemies[i];
+                    nearestDistance = distance;
+                }
             }
+            print("We finding nearest Pirate");
+            navigation.destination = NearestEnemy.transform.position;
         }
-        print("We finding nearest Pirate");
-        navigation.destination = NearestEnemy.transform.position;
     }
 }

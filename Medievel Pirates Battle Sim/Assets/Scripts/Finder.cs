@@ -15,7 +15,7 @@ public class Finder : MonoBehaviour
 
     private NavMeshAgent agent;
 
-    private bool grounded = true;
+    //private bool grounded = true;
     
     void Start () {
         agent = GetComponent<NavMeshAgent>();

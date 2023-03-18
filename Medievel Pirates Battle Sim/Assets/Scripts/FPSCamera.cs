@@ -10,11 +10,22 @@ public class FPSCamera : MonoBehaviour
     public float minTurnAngle = -90.0f;
     public float maxTurnAngle = 90.0f;
     private float rotX;
+    public bool on = false;
 
     void Update()
     {
-        MouseAiming();
-        KeyboardMovement();
+        if (on){
+            MouseAiming();
+            KeyboardMovement();
+        }
+    }
+
+    public void turnOn(){
+        on = true;
+    }
+
+    public void turnOff(){
+        on = false;
     }
 
     void MouseAiming()

@@ -207,4 +207,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllEnemies: []
   NearestEnemy: {fileID: 0}
+  on: 0
   navigation: {fileID: 856686661}
