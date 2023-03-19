@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllEnemies: []
   NearestEnemy: {fileID: 0}
+  on: 0
   navigation: {fileID: 2660192959249268653}
 --- !u!1001 &3389261476391397526
 PrefabInstance:
@@ -66,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 514146944834644576, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_Name
       value: LightPirate
+      objectReference: {fileID: 0}
+    - target: {fileID: 514146944834644576, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 514146944834644576, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -270,6 +275,14 @@ PrefabInstance:
     - target: {fileID: 4467979590848490498, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627764779199926350, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.031498756
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627764779199926350, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.088938415
       objectReference: {fileID: 0}
     - target: {fileID: 4658447714678900135, guid: a6982bbcb5e06004ca27489074436f69, type: 3}
       propertyPath: m_StaticEditorFlags

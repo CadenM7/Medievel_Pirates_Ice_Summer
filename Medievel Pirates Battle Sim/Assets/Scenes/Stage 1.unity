@@ -321,7 +321,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 10000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -1367,6 +1367,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2894564102515000054, guid: 7777ec9634c8caf48abe5fbea4a3d45e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3389261477375540962, guid: 7777ec9634c8caf48abe5fbea4a3d45e, type: 3}
       propertyPath: m_Name
       value: PirateSpace
