@@ -831,9 +831,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 4
-  moveSpeed: 200
+  moveSpeed: 100
   minTurnAngle: -90
   maxTurnAngle: 90
+  on: 0
 --- !u!1001 &977822947
 PrefabInstance:
   m_ObjectHideFlags: 0
