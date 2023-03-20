@@ -16,7 +16,7 @@ Joys: Getting cool pathfinding algorithms to work and see animations on characte
 
 Struggles: Bug Fixed code and getting 3d objects to look how we want them to.
 
-Attributions: ****ZOIE DO THIS PART****
+Attributions: https://opengameart.org/content/medieval-exploration https://opengameart.org/content/medieval-the-bards-tale https://opengameart.org/content/stone-wall-1 https://opengameart.org/content/simple-castle https://opengameart.org/content/pirate-kit
 
 Contributions:
 
